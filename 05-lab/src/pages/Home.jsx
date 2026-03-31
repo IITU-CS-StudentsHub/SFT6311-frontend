@@ -17,10 +17,7 @@ const Home = () => {
 
   return (
     <div className="home-page dashboard">
-      <header
-        className="dashboard-header"
-        style={{ textAlign: 'center', marginBottom: '50px' }}
-      >
+      <header className="dashboard-header" style={{ textAlign: 'center', marginBottom: '50px' }}>
         <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>Welcome</h1>
         <p
           style={{
@@ -30,8 +27,8 @@ const Home = () => {
             margin: '0 auto',
           }}
         >
-          Centralized control center for your infrastructure, development
-          projects, and personal services.
+          Centralized control center for your infrastructure, development projects, and personal
+          services.
         </p>
       </header>
 
@@ -42,9 +39,7 @@ const Home = () => {
         categoriesCount={stats.categories}
       />
 
-      <div
-        style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}
-      >
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
         <Link
           to="/dashboard"
           className="add-btn"

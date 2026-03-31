@@ -1,11 +1,9 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import {
-  INITIAL_SERVICES,
-  SERVICES_LOCAL_STORAGE_KEY,
-} from '../config/service.config'
+import { INITIAL_SERVICES, SERVICES_LOCAL_STORAGE_KEY } from '../config/service.config'
 import { ServiceContext } from '../context/ServiceContext'
 import { migrateService } from '../utils/migrateService.util'
 import { saveToLocalStorage } from '../utils/saveToLocalStorage.util'
+import { useFormAction } from 'react-router-dom'
 
 const STATUS = {
   ONLINE: 'offline',
@@ -65,9 +63,7 @@ export const ServiceProvider = ({ children }) => {
   /* task 4: edit service through form */
   const editService = useCallback(
     (id, updatedData) => {
-      updateAndSave((prev) =>
-        prev.map((s) => (s.id === id ? { ...s, ...updatedData } : s)),
-      )
+      updateAndSave((prev) => prev.map((s) => (s.id === id ? { ...s, ...updatedData } : s)))
     },
     [updateAndSave],
   )
@@ -82,9 +78,7 @@ export const ServiceProvider = ({ children }) => {
   const toggleStatus = useCallback(
     (id) => {
       updateAndSave((prev) =>
-        prev.map((s) =>
-          s.id === id ? { ...s, status: TOGGLE_STATUS[s.status] } : s,
-        ),
+        prev.map((s) => (s.id === id ? { ...s, status: TOGGLE_STATUS[s.status] } : s)),
       )
     },
     [updateAndSave],
@@ -112,18 +106,8 @@ export const ServiceProvider = ({ children }) => {
       toggleStatus,
       stats,
     }),
-    [
-      services,
-      isLoading,
-      addService,
-      editService,
-      deleteService,
-      toggleStatus,
-      stats,
-    ],
+    [services, isLoading, addService, editService, deleteService, toggleStatus, stats],
   )
 
-  return (
-    <ServiceContext.Provider value={value}>{children}</ServiceContext.Provider>
-  )
+  return <ServiceContext.Provider value={value}>{children}</ServiceContext.Provider>
 }

@@ -234,9 +234,7 @@ const Dashboard = () => {
   const handleToggleStatus = (id) => {
     setServices(
       services.map((s) =>
-        s.id === id
-          ? { ...s, status: s.status === 'online' ? 'offline' : 'online' }
-          : s,
+        s.id === id ? { ...s, status: s.status === 'online' ? 'offline' : 'online' } : s,
       ),
     )
   }
@@ -289,11 +287,7 @@ const Dashboard = () => {
         </button>
       </header>
 
-      <StatsPanel
-        totalServices={stats.total}
-        activeCount={stats.active}
-        sslCount={stats.ssl}
-      />
+      <StatsPanel totalServices={stats.total} activeCount={stats.active} sslCount={stats.ssl} />
 
       <FilterBar
         categories={CATEGORIES}
