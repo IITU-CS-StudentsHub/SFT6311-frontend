@@ -1,0 +1,213 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "cAdivisor",
+      "category": "Infrastructure",
+      "url": "cadvisor.internal.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Container resource usage and performance analysis tool",
+      "tags": ["monitoring"],
+      "createdAt": 1711786523956
+    },
+    {
+      "id": 2,
+      "title": "Grafana",
+      "category": "Infrastructure",
+      "url": "grafana.internal.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Analytics and monitoring dashboards",
+      "tags": ["monitoring", "critical"],
+      "createdAt": 1711786423956
+    },
+    {
+      "id": 3,
+      "title": "Nginx Proxy Manager",
+      "category": "Infrastructure",
+      "url": "nginx.internal.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Reverse proxy management UI",
+      "tags": ["critical", "internal"],
+      "createdAt": 1711786323956
+    },
+    {
+      "id": 4,
+      "title": "Portainer",
+      "category": "Infrastructure",
+      "url": "portainer.internal.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Docker container management",
+      "tags": ["critical", "internal"],
+      "createdAt": 1711786223956
+    },
+    {
+      "id": 5,
+      "title": "Prometheus",
+      "category": "Infrastructure",
+      "url": "prometheus.internal.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Metrics collection and alerting",
+      "tags": ["monitoring", "critical"],
+      "createdAt": 1711786123956
+    },
+    {
+      "id": 6,
+      "title": "Vault",
+      "category": "Infrastructure",
+      "url": "vault.internal.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Secrets and encryption management",
+      "tags": ["critical", "internal"],
+      "createdAt": 1711786023956
+    },
+    {
+      "id": 7,
+      "title": "ChatApp API",
+      "category": "Dev",
+      "url": "chatapp-api.novitech.dev",
+      "status": "online",
+      "ssl": false,
+      "description": "Real-time chat backend service",
+      "tags": ["development", "public"],
+      "createdAt": 1711785923956
+    },
+    {
+      "id": 8,
+      "title": "ChatApp Frontend",
+      "category": "Dev",
+      "url": "chatapp.novitech.dev",
+      "status": "online",
+      "ssl": false,
+      "description": "Chat application web interface",
+      "tags": ["development", "public"],
+      "createdAt": 1711785823956
+    },
+    {
+      "id": 9,
+      "title": "Iceberg CRM",
+      "category": "Dev",
+      "url": "id.iceberg-crm.internal.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Customer relationship management system",
+      "tags": ["production", "internal"],
+      "createdAt": 1711785723956
+    },
+    {
+      "id": 10,
+      "title": "Qoldai",
+      "category": "Dev",
+      "url": "qoldai.novitech.dev",
+      "status": "online",
+      "ssl": false,
+      "description": "Support and ticketing platform",
+      "tags": ["development", "public"],
+      "createdAt": 1711785623956
+    },
+    {
+      "id": 11,
+      "title": "TrueSearch",
+      "category": "Dev",
+      "url": "truesearch.novitech.dev",
+      "status": "online",
+      "ssl": false,
+      "description": "Full-text search engine",
+      "tags": ["development"],
+      "createdAt": 1711785523956
+    },
+    {
+      "id": 12,
+      "title": "CEO Dashboard",
+      "category": "Dev",
+      "url": "ceo.novitech.dev",
+      "status": "online",
+      "ssl": false,
+      "description": "Executive analytics dashboard",
+      "tags": ["production", "internal"],
+      "createdAt": 1711785423956
+    },
+    {
+      "id": 13,
+      "title": "Immich",
+      "category": "Media",
+      "url": "immich.internal.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Self-hosted photo and video backup",
+      "tags": ["internal"],
+      "createdAt": 1711785323956
+    },
+    {
+      "id": 14,
+      "title": "Jellyfin",
+      "category": "Media",
+      "url": "jellyfin.internal.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Media streaming server",
+      "tags": ["internal"],
+      "createdAt": 1711785223956
+    },
+    {
+      "id": 15,
+      "title": "Minecraft Server",
+      "category": "Personal",
+      "url": "play.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Game server for friends",
+      "tags": ["public"],
+      "createdAt": 1711785123956
+    },
+    {
+      "id": 16,
+      "title": "Birthday Project",
+      "category": "Personal",
+      "url": "iloveyou.novitech.dev",
+      "status": "online",
+      "ssl": false,
+      "description": "Special birthday surprise website",
+      "tags": ["public"],
+      "createdAt": 1711785023956
+    },
+    {
+      "id": 17,
+      "title": "Google Meet",
+      "category": "Personal",
+      "url": "meet.novitech.dev",
+      "status": "online",
+      "ssl": true,
+      "description": "Video conferencing redirect",
+      "tags": ["public"],
+      "createdAt": 1711784923956
+    },
+    {
+      "id": 18,
+      "title": "Earth App",
+      "category": "Personal",
+      "url": "earth.novitech.dev",
+      "status": "online",
+      "ssl": false,
+      "description": "Interactive earth visualization",
+      "tags": ["public", "development"],
+      "createdAt": 1711784823956
+    },
+    {
+      "id": 19,
+      "title": "Fire Suppression",
+      "category": "Personal",
+      "url": "fire.novitech.dev",
+      "status": "online",
+      "ssl": false,
+      "description": "Emergency response system",
+      "tags": ["critical", "internal"],
+      "createdAt": 1711784723956
+    }
+  ]
+}
